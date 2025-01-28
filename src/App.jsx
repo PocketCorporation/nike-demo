@@ -1,7 +1,33 @@
-export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+import {Hero,PopularProducts,SuperQuality,Services,SpecialOffer,CustomerReviews,Subscribe,Footer} from './sections' 
+
+const App = ()=>(
+  <main className="relative">
+    Nav
+    <section className='xl:padding-1 wide:padding-r padding-b'>
+      <Hero />
+    </section>
+    <div className="padding">
+      <PopularProducts />
+    </div>
+    <div className="padding">
+      <SuperQuality />
+    </div>
+    <div className="padding-x py-10">
+      <Services />
+    </div>
+    <div className="padding">
+      <SpecialOffer />
+    </div>
+    <div className="bg-pale-blue padding">
+      <CustomerReviews />
+    </div>
+    <div className="padding-x sm:py-32 py-16 w-full">
+      <Subscribe />
+    </div>
+    <div className="padding bg-black padding-x padding-t pb-8">
+      <Footer />
+    </div>
+  </main>
+)
+
+export default App
